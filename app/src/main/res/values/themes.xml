@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Evapp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="@style/Widget.BottomNavigationView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Size 14-->
+    <style name="font_14_white_regular" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorLightGray</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="font_14_gray_regular" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!--Size 16-->
+    <style name="font_16_black_regular" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="font_16_yellow_medium" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_16_black_medium" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_16_yellow_bold" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--Size 18-->
+    <style name="font_18_black_regular" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="font_18_black_medium" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="hintTextColor">@color/colorGray</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_18_white_medium" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_18_yellow_medium" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_18_red_medium" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!--Size 22-->
+    <style name="font_22_black_bold" parent="text">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--Size 40-->
+    <style name="font_40_yellow_black" parent="text">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
+    <style name="font_40_blue_black" parent="text">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
+
+</resources>

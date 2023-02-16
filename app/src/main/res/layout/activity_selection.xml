@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".view.auth.SelectionActivity">
+
+    <ImageView
+        android:id="@+id/selection_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_flamenco"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find nearby electric vehicle charging points and book or add your point."
+        style="@style/font_18_black_medium"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/selection_thumbnail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/selection_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/background_fill_blue"
+            android:text="User"
+            android:textAllCaps="false"
+            style="@style/font_18_white_medium"/>
+
+        <Button
+            android:id="@+id/selection_vendor_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/background_fill_yellow"
+            android:text="Vendor"
+            android:textAllCaps="false"
+            style="@style/font_18_white_medium"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

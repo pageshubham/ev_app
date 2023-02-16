@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:padding="24dp"
+    tools:context=".view.auth.VendorSignupActivity">
+
+    <LinearLayout
+        android:id="@+id/vendor_signup_back_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vendor_signup_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Vendor"
+            style="@style/font_18_black_medium"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_below="@+id/vendor_signup_back_icon"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/vendor_signup_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Enter company name"
+                style="@style/font_18_black_medium"
+                android:inputType="textCapWords"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/vendor_signup_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Enter email address"
+                style="@style/font_18_black_medium"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/vendor_signup_gst_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Enter GST number"
+                style="@style/font_18_black_medium"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/vendor_signup_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Enter password"
+                style="@style/font_18_black_medium"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/vendor_signup_confirm_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Confirm password"
+                style="@style/font_18_black_medium"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <Button
+                android:id="@+id/vendor_signup_register_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_fill_yellow"
+                android:text="register"
+                android:textAllCaps="false"
+                style="@style/font_18_white_medium"
+                android:layout_marginTop="32dp"/>
+
+            <ProgressBar
+                android:id="@+id/vendor_signup_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

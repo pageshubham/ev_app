@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="24dp"
+    android:background="@drawable/background_fill_white"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/single_user_slot_booking_title"
+            style="@style/font_18_black_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book a slot"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:id="@+id/single_user_slot_booking_close_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_close"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/single_user_slot_booking_company_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_border_gray">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/single_user_slot_booking_company_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorBlack"
+            android:popupBackground="@drawable/background_border_gray"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/single_user_slot_booking_model_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_border_gray">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/single_user_slot_booking_model_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorBlack"
+            android:popupBackground="@drawable/background_border_gray"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/single_user_slot_booking_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_border_gray">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/single_user_slot_booking_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorBlack"
+            android:popupBackground="@drawable/background_border_gray"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/single_user_slot_booking_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_border_gray">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/single_user_slot_booking_time_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorBlack"
+            android:popupBackground="@drawable/background_border_gray"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/single_user_slot_booking_availability"
+        style="@style/font_16_black_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slot is Available"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/single_user_slot_booking_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_fill_blue"
+        android:text="Confirm Booking"
+        android:textAllCaps="false"
+        style="@style/font_18_white_medium"/>
+
+</LinearLayout>

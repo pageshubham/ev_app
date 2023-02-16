@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="24dp"
+    android:background="@drawable/background_fill_white"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_plug"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/single_user_plug_in_title"
+        style="@style/font_18_black_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plug is ready to use!"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/single_user_plug_in_timing"
+        style="@style/font_14_gray_regular"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New gen charging points from 11:00 - 13:00 "
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/single_user_plug_in_done"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/background_fill_blue"
+        android:text="Charging Done"
+        android:textAllCaps="false"
+        style="@style/font_18_white_medium"/>
+
+</LinearLayout>

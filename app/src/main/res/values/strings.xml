@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Evapp</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="api_key">AIzaSyBxj2idbUKss0iCjuZxlwfI3VaAHgtg0lo</string>
+    <string name="access_token">sk.eyJ1IjoibmlzaGFudGMiLCJhIjoiY2wxdnkyYjdxMDA0ajNpbWt0eGs5MmJ5aCJ9.nAPEIJBp9y1anjDeEcK-YQ</string>
+
+    <string-array name="ports">
+        <item>Port</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>Quantity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="vehicle_company">
+        <item>Tata Motors</item>
+    </string-array>
+
+    <string-array name="vehicle_model">
+        <item>Nexon EV</item>
+    </string-array>
+
+    <string-array name="port_type">
+        <item>SAE Combo</item>
+        <item>CHAdeMO</item>
+    </string-array>
+
+    <string-array name="slot_time">
+        <item>01:00 AM - 02:00 AM</item>
+        <item>02:00 AM - 03:00 AM</item>
+        <item>03:00 AM - 04:00 AM</item>
+        <item>04:00 AM - 05:00 AM</item>
+        <item>05:00 AM - 06:00 AM</item>
+        <item>06:00 AM - 07:00 AM</item>
+        <item>07:00 AM - 08:00 AM</item>
+        <item>08:00 AM - 09:00 AM</item>
+        <item>09:00 AM - 10:00 AM</item>
+        <item>10:00 AM - 11:00 AM</item>
+        <item>11:00 AM - 12:00 PM</item>
+        <item>12:00 PM - 13:00 PM</item>
+        <item>13:00 PM - 14:00 PM</item>
+        <item>14:00 PM - 15:00 PM</item>
+        <item>15:00 PM - 16:00 PM</item>
+        <item>16:00 PM - 17:00 PM</item>
+        <item>17:00 PM - 18:00 PM</item>
+        <item>18:00 PM - 19:00 PM</item>
+        <item>19:00 PM - 20:00 PM</item>
+        <item>20:00 PM - 21:00 PM</item>
+        <item>21:00 PM - 22:00 PM</item>
+        <item>22:00 PM - 23:00 PM</item>
+        <item>23:00 PM - 23:59 PM</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/vendor_home_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            style="@style/font_18_black_medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vendor_home_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/vendor_home_title_text"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/vendor_home_earned_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/background_border_fill_yellow">
+
+            <TextView
+                android:id="@+id/vendor_home_total_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹ 7,890"
+                style="@style/font_40_yellow_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Earned this month"
+                style="@style/font_18_black_regular"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vendor_home_points_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/background_border_fill_blue">
+
+            <TextView
+                android:id="@+id/vendor_home_active_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="102"
+                style="@style/font_40_blue_black"/>
+
+            <TextView
+                android:id="@+id/vendor_home_total_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active points of 157"
+                style="@style/font_18_black_regular"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vendor_home_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

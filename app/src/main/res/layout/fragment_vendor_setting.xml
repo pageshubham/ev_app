@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/vendor_setting_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            style="@style/font_18_black_medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/vendor_setting_title_text"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:id="@+id/vendor_setting_profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:background="@drawable/background_border_gray">
+
+            <ImageView
+                android:id="@+id/vendor_setting_profile_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_user"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Details"
+                style="@style/font_18_black_medium"
+                android:layout_toEndOf="@+id/vendor_setting_profile_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_arrow_front"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vendor_setting_about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_border_gray">
+
+            <ImageView
+                android:id="@+id/vendor_setting_about_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_details"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                style="@style/font_18_black_medium"
+                android:layout_toEndOf="@+id/vendor_setting_about_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_arrow_front"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/vendor_setting_logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Logout"
+            style="@style/font_18_red_medium"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

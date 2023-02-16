@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:padding="24dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/vendor_add_station_back_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vendor_add_station_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Station"
+            style="@style/font_18_black_medium"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_below="@+id/vendor_add_station_back_icon"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/vendor_add_station_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Enter charging station name"
+                style="@style/font_18_black_medium"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <LinearLayout
+                android:id="@+id/vendor_add_station_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_border_gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/vendor_add_station_location_input"
+                    style="@style/font_18_black_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Select GPS location"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp" />
+
+                <ProgressBar
+                    android:id="@+id/vendor_add_station_location_progress_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/vendor_add_station_location_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_location" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vendor_add_station_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_border_gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/vendor_add_station_image_input"
+                    style="@style/font_18_black_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Upload image"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp" />
+
+                <ProgressBar
+                    android:id="@+id/vendor_add_station_image_progress_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/vendor_add_station_image_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_upload" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/vendor_add_station_cost_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_border_gray"
+                android:hint="Charging cost (₹/ kWh)"
+                style="@style/font_18_black_medium"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="32dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <RelativeLayout
+                    android:id="@+id/vendor_add_station_port_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_border_gray">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/vendor_add_station_port_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:popupBackground="@drawable/background_border_gray"
+                        android:popupElevation="0dp"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vendor_add_station_quantity_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/background_border_gray">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/vendor_add_station_quantity_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:popupBackground="@drawable/background_border_gray"
+                        android:popupElevation="0dp"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vendor_add_station_port_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_border_yellow"
+                android:text="Add port"
+                android:textAllCaps="false"
+                style="@style/font_18_yellow_medium"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/vendor_add_station_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background_fill_yellow"
+                android:text="Add station"
+                android:textAllCaps="false"
+                style="@style/font_18_white_medium"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
